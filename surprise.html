@@ -1,0 +1,90 @@
+<!-- surprise.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle, #ffe3e3, #ff8fab);
+      font-family: 'Fredoka One', cursive;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: rgb(196, 84, 196);
+      font-size: 3rem;
+      animation: bounce 1.5s ease infinite alternate;
+    }
+
+    .cake {
+      width: 250px;
+      height: 400px;
+      margin: 30px auto;
+      animation: pop 1s ease-in-out;
+      border-radius: 5px;
+      z-index: 2;
+    }
+
+    .confetti {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      opacity: 0.5;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: white;
+      color: #ff4d6d;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #ff4d6d;
+      color: white;
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="confetti"></div>
+  <h1>🎉 SURPRISEEEE!!! 🎉</h1>
+  <img class="cake" src="D:\web development\CSS\birthday\images\image7.jpg" alt="Birthday Cake">
+  <p style="color: rgb(196, 84, 196); font-size: 1.2rem; max-width: 600px; padding: 0 20px;z-index: 3;">
+    Wishing you the happiest, brightest, most magical birthday ever! You deserve all the joy today and always. Now go eat some cake! 🍰💖
+  </p>
+  <button class="btn" onclick="window.location.href='photo_gallery.html'">Next Page 🌈</button>
+</body>
+</html>

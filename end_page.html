@@ -1,0 +1,75 @@
+<!-- end.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The End 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to top right, #ffd6e0, #fcb69f);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Pacifico', cursive;
+      color: rgb(189, 79, 189);
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.5rem;
+      max-width: 700px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      animation: pulse 1s infinite alternate;
+      margin-top: 30px;
+    }
+
+    .btn {
+      margin-top: 40px;
+      padding: 12px 28px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      background-color: white;
+      color: #f76c6c;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #f76c6c;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>The End... or is it? 😉</h1>
+  <p>Thank you for going through this little surprise journey. Every moment shared, every memory made — it's all part of the love I poured into this just for you. 🥹💖</p>
+  <div class="heart">❤️</div>
+  <button class="btn" onclick="window.location.href='index.html'">Replay from Start 🔁</button>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!-- message.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Birthday Message</title>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(145deg, #f6d365, #fda085);
+      height: 100%;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Handlee', cursive;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .message-box {
+      width: 700px;
+      min-height: 800px;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .typing-text {
+      font-size: 30px;
+      border-right: 3px solid white;
+      overflow: hidden;
+      animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .btn {
+      margin-top: 30px;
+      background-color: white;
+      color: #f76c6c;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #f76c6c;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <div class="typing-text">
+
+      <h2>🎉 Happy Birthday to someone truly I Love! 🎂</h2>
+
+<p>On this special day, I just want to take a moment to remind you how amazing, strong, kind, and beautiful—inside and out—you really are. 🫶 Whether it’s your smile, your vibe, your sense of humor, or the way you light up a room with just your presence… you’re someone who makes life a little brighter for everyone lucky enough to know you. 💫
+
+Life isn’t always easy, and we all have our ups and downs—but watching the way you move through everything with such grace and courage is seriously inspiring. You're not just growing older today, you’re growing wiser, fiercer, and more unstoppable. ✨
+
+May this year bring you wild opportunities, beautiful surprises, and people who genuinely see you and love you for exactly who you are. May you laugh louder, dream bigger, and live bolder. And please, never forget how much you're loved—not just today, but every single day. 💖
+
+You deserve everything sweet this life has to offer—birthday cake included 🍰 (and I hope you get the BIGGEST slice).
+
+So here’s to more spontaneous adventures, deep convos at 2am, healing, wins that make your heart race, and memories that make your soul dance. 🎈
+
+Keep shining. Keep slaying. And keep being unapologetically YOU.
+Happiest of birthdays! 🥳💌
+
+
+      Now... get ready for your final surprise 🎁</p>
+    </div>
+    <button class="btn" onclick="window.location.href='surprise.html'">Ready? 🎂</button>
+  </div>
+</body>
+</html>

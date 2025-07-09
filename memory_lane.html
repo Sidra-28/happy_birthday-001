@@ -1,0 +1,107 @@
+<!-- memories.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Lane</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #333;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(190, 83, 190);
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .memory {
+      background: rgba(255,255,255,0.9);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .memory img {
+      width: 60%;
+      height:40%;
+      object-fit: cover;
+      margin-left: 20%;
+      border-radius: 10px;
+    }
+
+    .memory p {
+      font-size: 1.1rem;
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+      
+    }
+
+    .btn {
+      display: block;
+      margin: 40px auto 0;
+      background-color: #fff;
+      color: #ee4c7c;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ee4c7c;
+      color: #fff;
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Memory Lane 📸</h1>
+
+    <div class="memory">
+      <img src="images\image1.jpg" alt="Memory 1">
+      <p>Cutest Pic of yours😂💖</p>
+    </div>
+
+    <div class="memory">
+      <img src="images\image2.jpg" alt="Memory 2">
+      <p>one of the best moment we captured. 🌍✨</p>
+    </div>
+
+    <div class="memory">
+      <img src="images\image3.jpg" alt="Memory 3">
+      <p>u have muscles but i'm stronger than you 😂💖</p>
+    </div>
+
+    <button class="btn" onclick="window.location.href='message.html'">Next → The Message 💌</button>
+  </div>
+</body>
+</html>
